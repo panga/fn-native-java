@@ -25,3 +25,5 @@ curl -d 'Leonardo' http://localhost:8080/r/javafn/native
 3. Copy [Dockerfile](Dockerfile) and change `CMD` to your entrypoint
 
 4. Change `func.yaml` runtime property to `docker`
+
+Note: More advanced use cases using [fnproject/fdk-java](https://github.com/fnproject/fdk-java) are also working.
