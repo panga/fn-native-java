@@ -20,7 +20,7 @@ curl -d 'Leonardo' http://localhost:8080/r/javafn/native
 
 1. Create a new Java function with `fn init --runtime java8`
 
-2. Add `reflection.json` file (see [reflection.json](reflection.json) example)
+2. Add `reflection.json` file (see [reflection.json](reflection.json) example and [GraalVM docs](https://github.com/oracle/graal/blob/master/substratevm/REFLECTION.md))
 
 3. Copy [Dockerfile](Dockerfile) and change `CMD` to your entrypoint
 
