@@ -13,18 +13,16 @@ fn deploy --all
 2. Test
 
 ```
-/usr/bin/time curl -d 'Leonardo' http://localhost:8080/r/javafn/native
+curl -d 'Leonardo' http://localhost:8080/r/javafn/native
 ```
 
 ## FAQ: How to create a new Java native function?
 
-1. Create a java function
+1. Create a java function with `fn init --runtime java8`
 
-`fn init --runtime java8`
+2. Add `reflection.json` file (see [native/reflection.json](native/reflection.jso) example)
 
-2. Add `reflection.json` file (see [native/reflection.json] example)
-
-3. Add Dockerfile from [native/Dockerfile] and change `CMD` to your entrypoint
+3. Add Dockerfile from [native/Dockerfile](native/Dockerfile) and change `CMD` to your entrypoint
 
 4. Change `func.yaml` runtime property to `docker`
 
