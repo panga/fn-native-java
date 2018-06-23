@@ -1,7 +1,0 @@
-name: java
-version: 0.0.3
-runtime: java8
-cmd: com.example.fn.HelloFunction::handleRequest
-build_image: fnproject/fn-java-fdk-build:1.0.62
-run_image: fnproject/fn-java-fdk:1.0.62
-format: http

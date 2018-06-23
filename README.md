@@ -5,9 +5,9 @@
 1. Build and deploy
 
 ```
-mvn -f native/pom.xml clean package
-mvn -f native/pom.xml dependency:copy-dependencies
-fn deploy --all
+mvn clean package
+mvn dependency:copy-dependencies
+fn deploy --app javafn --local
 ```
 
 2. Test
@@ -25,11 +25,3 @@ curl -d 'Leonardo' http://localhost:8080/r/javafn/native
 3. Add Dockerfile from [native/Dockerfile](native/Dockerfile) and change `CMD` to your entrypoint
 
 4. Change `func.yaml` runtime property to `docker`
-
-5. Build and deploy
-
-```
-mvn clean package
-mvn dependency:copy-dependencies
-fn deploy
-```
