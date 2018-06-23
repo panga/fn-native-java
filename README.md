@@ -18,7 +18,7 @@ curl -d 'Leonardo' http://localhost:8080/r/javafn/native
 
 ## FAQ: How to create a new Native Java Function using GraalVM?
 
-1. Create a java function with `fn init --runtime java8`
+1. Create a new Java function with `fn init --runtime java8`
 
 2. Add `reflection.json` file (see [reflection.json](reflection.json) example)
 
