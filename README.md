@@ -20,8 +20,8 @@ curl -d 'Leonardo' http://localhost:8080/r/javafn/native
 
 1. Create a java function with `fn init --runtime java8`
 
-2. Add `reflection.json` file (see [native/reflection.json](native/reflection.json) example)
+2. Add `reflection.json` file (see [reflection.json](reflection.json) example)
 
-3. Add Dockerfile from [native/Dockerfile](native/Dockerfile) and change `CMD` to your entrypoint
+3. Copy [Dockerfile](Dockerfile) and change `CMD` to your entrypoint
 
 4. Change `func.yaml` runtime property to `docker`
