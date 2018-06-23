@@ -10,7 +10,7 @@ mvn dependency:copy-dependencies
 fn deploy --app javafn --local
 ```
 
-2. Test
+2. Call the function
 
 ```
 curl -d 'Leonardo' http://localhost:8080/r/javafn/native
