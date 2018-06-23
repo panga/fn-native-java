@@ -16,7 +16,7 @@ fn deploy --app javafn --local
 curl -d 'Leonardo' http://localhost:8080/r/javafn/native
 ```
 
-## FAQ: How to create a new Java native function using GraalVM?
+## FAQ: How to create a new Native Java Function using GraalVM?
 
 1. Create a java function with `fn init --runtime java8`
 
