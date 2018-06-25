@@ -13,10 +13,8 @@ RUN native-image \
     -cp "app/*" \
     com.fnproject.fn.runtime.EntryPoint
 
-FROM alpine
-RUN apk add --no-cache ca-certificates
+FROM scratch
 WORKDIR /app
 COPY --from=build-env /app/fn /app/fn
 ENTRYPOINT [ "./fn" ]
-
 CMD [ "com.example.fn.HelloFunction::handleRequest" ]
