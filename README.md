@@ -2,13 +2,13 @@
 
 ## Usage
 
-1. Build and deploy
+1. Build and deploy the function
 
 ```
-mvn clean package
-mvn dependency:copy-dependencies
 fn deploy --app javafn --local
 ```
+
+Note: Requires `mvn` CLI installed.
 
 2. Call the function
 
@@ -24,6 +24,6 @@ curl -d 'Leonardo' http://localhost:8080/r/javafn/native
 
 3. Copy [Dockerfile](Dockerfile) and change `CMD` to your entrypoint.
 
-4. Change `func.yaml` to use `docker` runtime.
+4. Change your [func.yaml](func.yaml) to use `docker` runtime and add build commands.
 
 Note: More advanced use cases using [fnproject/fdk-java](https://github.com/fnproject/fdk-java) are also working.

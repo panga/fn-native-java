@@ -1,4 +1,7 @@
 name: native
-version: 0.0.1
+version: 0.0.2
 runtime: docker
+build:
+- mvn clean package
+- mvn dependency:copy-dependencies
 format: http
